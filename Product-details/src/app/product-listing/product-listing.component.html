@@ -1,0 +1,16 @@
+
+<table>
+  <tr *ngFor="let product of products">  
+    <td>{{product?. name}}</td>
+    <td>{{product?.mrp}}</td>
+    <td>{{product?.mfg}}</td>
+    <td>{{product?.expire}}</td>
+    <td>{{product?.batch}}</td>
+    <td><button routerLink="/products/{{product?.id}}">edit</button></td>
+    <td><button (click)="deleteproduct(product?.id)">delete</button></td>
+  </tr>
+
+</table> 
+    
+  <h1>  Employees Listing</h1>
+<button routerLink='/dashboard'>LOGIN</button>

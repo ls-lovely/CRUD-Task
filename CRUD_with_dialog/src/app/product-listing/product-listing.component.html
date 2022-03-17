@@ -1,0 +1,20 @@
+<h1>  Product Listing</h1>
+<button (click)="openDialog()">Create product</button>
+
+<table>
+  <tr *ngFor="let product of products">  
+    <td>{{product?. name}}</td>
+    <td>{{product?.mrp}}</td>
+    <td>{{product?.mfg}}</td>
+    <td>{{product?.expire}}</td>
+    <td>{{product?.batch}}</td>
+    <td><button (click)="deleteProduct(product.id)">delete</button></td>
+    <td><button (click)="openEditDialog(product)">Edit</button></td>
+
+    
+  
+  </tr>
+
+</table> 
+    
+  

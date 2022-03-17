@@ -1,0 +1,37 @@
+
+<h1 align="center">Product Details</h1>
+<div class="col-md-4 m-5 pb-5">
+  <form [formGroup]="deleteProductForm" >
+    <div class="form-group">
+      <label>Product Name : </label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Enter product name">
+      <span class="warning" *ngIf="deleteProductForm.controls['name'].errors?.required">
+        *product name is required </span>
+    </div>
+    <div class="form-group">
+      <label>Product mrp : </label>
+      <input type="text" class="form-control" formControlName="mrp" placeholder="Enter product mrp">
+    </div>
+
+    <div class="form-group">
+      <label>Product mfg : </label>
+      <input type="text" class="form-control" formControlName="mfg" placeholder="Enter product mfg">
+    </div>
+
+    <div class="form-group">
+      <label>Product expire : </label>
+      <input type="number" class="form-control" formControlName="expire" placeholder="Enter product expire">
+      <span class="warning" *ngIf="deleteProductForm.controls['expire'].errors?.max || deleteProductForm.controls['expire'].errors?.min || deleteProductForm.controls['expire'].errors?.patters ">
+        *Invalid expire </span>
+    </div>
+
+    <div class="form-group">
+      <label>Product batch : </label>
+      <input type="text" class="form-control" formControlName="batch" placeholder="Enter product batch">
+      <span class="warning" *ngIf="deleteProductForm.controls['batch'].errors?.batch">
+        *Please enter a valid batch</span>
+    </div>
+    <button type="button" (click)="reset()" class="btn btn-warning mr-1">Reset</button>
+    <button type="submit" [disabled]="!deleteProductForm.valid" (click)="updateProduct()" class="btn btn-primary">Update</button>
+  </form>
+</div>

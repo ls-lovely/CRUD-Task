@@ -1,0 +1,18 @@
+
+<h1>  Detail Product</h1>
+<button (click)="openDialog()">Detail product</button>
+<button (click)="openDialog()">delete</button>
+<table>
+  <tr *ngFor="let product of products">  
+    <td>{{product?. name}}</td>
+    <td>{{product?.mrp}}</td>
+    <td>{{product?.mfg}}</td>
+    <td>{{product?.expire}}</td>
+    <td>{{product?.batch}}</td>
+
+    
+  
+  </tr>
+
+</table> 
+    

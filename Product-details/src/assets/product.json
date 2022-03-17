@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "camphor",
+      "mrp": "55",
+      "mfg": "august",
+      "expire": "octoberr",
+      "batch": "twenty four"
+    },
+    {
+      "id": 2,
+      "name": "Chips",
+      "mrp": "89",
+      "mfg": "january",
+      "expire": "march",
+      "batch": "fifty two"
+    },
+    {
+      "id": 3512600776338477,
+      "name": "ghfhg",
+      "mrp": "56456",
+      "mfg": "hhgh",
+      "expire": 59,
+      "batch": "ghfg"
+    }
+  ]
+}
